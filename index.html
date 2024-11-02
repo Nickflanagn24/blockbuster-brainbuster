@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Brainbuster</title>
+</head>
+<body>
+    <div id="startScreen" class="container">
+        <h1>Movie Quiz Game</h1>
+        <p>Select a difficulty level and press Start to begin!</p>
+        <select id="difficultySelector">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <button id="startQuizButton">Start Quiz</button>
+    </div>
+    
+    <div id="quizContainer" class="container" style="display: none;">
+        <h2 id="questionTitle">Guess the Movie</h2>
+        <img id="questionImage" src="" alt="Movie Scene" class="question-image">
+        <div class="options">
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+        </div>
+        <div class="hints">
+            <button class="hint-button">Hint 1</button>
+            <button class="hint-button">Hint 2</button>
+        </div>
+        <div id="hintBox" class="hint-box" style="display: none;"></div>
+    </div>
+
+    <div id="endScreen" class="container" style="display: none;">
+        <h2>Quiz Complete!</h2>
+        <p id="scoreDisplay">Your score: 0</p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+</body>
+</html>
