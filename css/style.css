@@ -23,3 +23,9 @@ h1, h2 {
     font-family: 'Lobster', cursive;
     color: #d9534f;
 }
+
+.question-image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
