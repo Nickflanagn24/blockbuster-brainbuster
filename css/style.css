@@ -29,3 +29,31 @@ h1, h2 {
     height: auto;
     margin: 15px 0;
 }
+
+/* Answer Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.answer-option.correct {
+    background-color: #5cb85c; /* Green for correct answer */
+    color: white;
+}
+
+.answer-option.incorrect {
+    background-color: #d9534f; /* Red for incorrect answer */
+    color: white;
+}
