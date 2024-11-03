@@ -137,6 +137,19 @@ button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
 }
 
+centered-list {
+    list-style-position: inside; /* Places bullets next to the text */
+    text-align: center; /* Centers the list items */
+    padding: 0;
+    margin: 0;
+}
+
+.centered-list li {
+    display: inline-block; /* Centers items horizontally */
+    text-align: left; /* Ensures text aligns left within each item */
+    margin: 5px; /* Adds some spacing between items */
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
