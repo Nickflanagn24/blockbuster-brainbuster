@@ -137,11 +137,6 @@ button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
 }
 
-#quizContainer {
-    max-height: 80vh; /* Limit height to allow for background visibility */
-    overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
-}
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {

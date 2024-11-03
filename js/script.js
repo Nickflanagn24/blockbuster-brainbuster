@@ -267,7 +267,14 @@ function shuffleArray(array) {
 }
 
 function playSound(type) {
-    console.log(type === "correct" ? "Playing correct sound" : "Playing incorrect sound");
+    const correctSound = document.getElementById("correctSound");
+    const incorrectSound = document.getElementById("incorrectSound");
+
+    if (type === "correct") {
+        correctSound.play();
+    } else if (type === "incorrect") {
+        incorrectSound.play();
+    }
 }
 
 function restartQuiz() {
