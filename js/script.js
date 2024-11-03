@@ -1,5 +1,6 @@
 // Quiz variables
 const questions = [
+    // Sample placeholder questions
     { 
         image: 'path/to/image1.jpg', 
         options: ["Movie A", "Movie B", "Movie C", "Movie D"], 
@@ -12,7 +13,7 @@ const questions = [
         correctAnswer: 1, 
         hints: ["Hint 1 for Q2", "Hint 2 for Q2"] 
     },
-    // Add more questions as needed
+    // add 27 more questions
 ];
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function startQuiz() {
-    // Set difficulty and hints available based on selection
+    // Get difficulty from selector and set hints available
     difficulty = document.getElementById("difficultySelector").value;
     hintsAvailable = difficulty === "Easy" ? 2 : difficulty === "Medium" ? 1 : 0;
 
@@ -34,8 +35,7 @@ function startQuiz() {
     selectedQuestions = shuffleArray(questions).slice(0, 10);
     currentQuestionIndex = 0;
     score = 0;
-
-    // Switch to quiz display
+    
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("quizContainer").style.display = "block";
     displayQuestion();
@@ -51,7 +51,8 @@ function displayQuestion() {
         option.classList.remove("correct", "incorrect");
         option.onclick = () => checkAnswer(index);
     });
-
+    
+    displayHints();
 }
 
 function displayHints() {
@@ -70,6 +71,31 @@ function showHint(index) {
     hintBox.style.display = "block";
 }
 
+function checkAnswer(selectedIndex) {
+    const questionData = selectedQuestions[currentQuestionIndex];
+    const options = document.querySelectorAll(".answer-option");
+
+    if (selectedIndex === questionData.correctAnswer) {
+        options[selectedIndex].classList.add("correct");
+        score += difficulty === "Easy" ? 1 : difficulty === "Medium" ? 2 : 3;
+        playSound("correct");
+    } else {
+        options[selectedIndex].classList.add("incorrect");
+        playSound("incorrect");
+    }
+
+    setTimeout(() => {
+        currentQuestionIndex++;
+        currentQuestionIndex < selectedQuestions.length ? displayQuestion() : endQuiz();
+    }, 1000);
+}
+
+function endQuiz() {
+    document.getElementById("quizContainer").style.display = "none";
+    document.getElementById("scoreDisplay").textContent = `Your score: ${score}`;
+    document.getElementById("endScreen").style.display = "block";
+}
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -77,3 +103,10 @@ function shuffleArray(array) {
     }
     return array;
 }
+
+function playSound(type) {
+    console.log(type === "correct" ? "Playing correct sound" : "Playing incorrect sound");
+}
+
+
+
