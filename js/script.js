@@ -2,16 +2,16 @@
 const questions = [
     // Sample placeholder questions
     { 
-        image: 'path/to/image1.jpg', 
-        options: ["Movie A", "Movie B", "Movie C", "Movie D"], 
+        image: 'assets/images/city-of-god.webp', 
+        options: ["City of God", "The Motorcycle Diaries", "City of Men", "City of Angels"], 
         correctAnswer: 0, 
-        hints: ["Hint 1 for Q1", "Hint 2 for Q1"] 
+        hints: ["This film is set in the favelas of Rio de Janeiro.", "It follows the lives of several characters growing up in a violent neighborhood."] 
     },
     { 
-        image: 'path/to/image2.jpg', 
-        options: ["Movie A", "Movie B", "Movie C", "Movie D"], 
+        image: 'assets/images/1917.webp', 
+        options: ["Dunkirk", "1917", "War Horse", "Hacksaw Ridge"], 
         correctAnswer: 1, 
-        hints: ["Hint 1 for Q2", "Hint 2 for Q2"] 
+        hints: ["This film is shot to appear as one continuous take.", "It follows two British soldiers during World War I on a dangerous mission."] 
     },
     // add 27 more questions
 ];
