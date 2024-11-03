@@ -118,3 +118,8 @@ button[onclick="restartQuiz()"] {
     transition: background-color 0.3s;
     margin-top: 10px;
 }
+
+button#startQuizButton:hover,
+button[onclick="restartQuiz()"]:hover {
+    background-color: #c9302c;
+}
