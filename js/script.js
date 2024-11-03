@@ -1,6 +1,18 @@
 // Quiz variables
 const questions = [
-    // Placeholder questions for testing
+    { 
+        image: 'path/to/image1.jpg', 
+        options: ["Movie A", "Movie B", "Movie C", "Movie D"], 
+        correctAnswer: 0, 
+        hints: ["Hint 1 for Q1", "Hint 2 for Q1"] 
+    },
+    { 
+        image: 'path/to/image2.jpg', 
+        options: ["Movie A", "Movie B", "Movie C", "Movie D"], 
+        correctAnswer: 1, 
+        hints: ["Hint 1 for Q2", "Hint 2 for Q2"] 
+    },
+    // Add more questions as needed
 ];
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
@@ -27,4 +39,41 @@ function startQuiz() {
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("quizContainer").style.display = "block";
     displayQuestion();
+}
+
+function displayQuestion() {
+    const questionData = selectedQuestions[currentQuestionIndex];
+    document.getElementById("questionImage").src = questionData.image;
+    const options = document.querySelectorAll(".answer-option");
+
+    options.forEach((option, index) => {
+        option.textContent = questionData.options[index];
+        option.classList.remove("correct", "incorrect");
+        option.onclick = () => checkAnswer(index);
+    });
+
+}
+
+function displayHints() {
+    const hintButtons = document.querySelectorAll(".hint-button");
+    const hintBox = document.getElementById("hintBox");
+    hintBox.style.display = "none";
+    hintButtons.forEach((button, index) => {
+        button.style.display = index < hintsAvailable ? "inline-block" : "none";
+        button.onclick = () => showHint(index);
+    });
+}
+
+function showHint(index) {
+    const hintBox = document.getElementById("hintBox");
+    hintBox.textContent = selectedQuestions[currentQuestionIndex].hints[index];
+    hintBox.style.display = "block";
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
