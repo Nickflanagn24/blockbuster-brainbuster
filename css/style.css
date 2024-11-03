@@ -7,6 +7,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative; /* Allows positioning of the absolute elements */
+    overflow: hidden; /* Prevents overflow from the image */
+}
+
+.background-image {
+    position: absolute; /* Positions the image in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    z-index: -1; /* Sends the image behind other content */
 }
 
 .container {
@@ -90,7 +102,7 @@ h1, h2 {
     font-size: 1.1em;
 }
 
-write a commit note for this code - /* Start and Restart Buttons */
+/* Start and Restart Buttons */
 button#startQuizButton,
 button[onclick="restartQuiz()"] {
     padding: 10px 20px;
@@ -122,4 +134,11 @@ button[onclick="restartQuiz()"] {
 button#startQuizButton:hover,
 button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
