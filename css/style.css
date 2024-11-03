@@ -3,12 +3,13 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative; /* Allows positioning of the absolute elements */
-    overflow: hidden; /* Prevents overflow from the image */
+    overflow: auto; /* Prevents overflow from the image */
 }
 
 .background-image {
@@ -134,6 +135,11 @@ button[onclick="restartQuiz()"] {
 button#startQuizButton:hover,
 button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
+}
+
+#quizContainer {
+    max-height: 80vh; /* Limit height to allow for background visibility */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
 }
 
 /* Mobile Responsiveness */
