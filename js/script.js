@@ -108,5 +108,8 @@ function playSound(type) {
     console.log(type === "correct" ? "Playing correct sound" : "Playing incorrect sound");
 }
 
-
+function restartQuiz() {
+    document.getElementById("endScreen").style.display = "none";
+    document.getElementById("startScreen").style.display = "block";
+}
 
