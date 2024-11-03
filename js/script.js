@@ -56,7 +56,7 @@ const questions = [
         hints: ["Directed by a filmmaker known for The Shining and A Clockwork Orange.", "The film is divided into two distinct parts: basic training and the Vietnam War."] 
     },
     { 
-        image: 'assets/images/goodwill-will-hunting.webp', 
+        image: 'assets/images/good-will-hunting.webp', 
         options: ["A Beautiful Mind", "Good Will Hunting", "Dead Poets Society", "The Pursuit of Happyness"], 
         correctAnswer: 1, 
         hints: ["This film features a character who is a janitor at MIT.", "The main character has a gift for mathematics but struggles with personal issues."] 
@@ -91,15 +91,91 @@ const questions = [
         correctAnswer: 2, 
         hints: ["The film is set in a mental institution", "The main character struggles against the oppressive authority of Nurse Ratched."] 
     },
+    { 
+        image: 'assets/images/pulp-fiction.webp', 
+        options: ["Reservoir Dogs", "Goodfellas", "True Romance", "Pulp Fiction"], 
+        correctAnswer: 3, 
+        hints: ["Features intersecting crime stories in Los Angeles.", "This film is known for its non-linear storyline and memorable dialogue."] 
+    },
+    { 
+        image: 'assets/images/raging-bull.webp', 
+        options: ["Raging Bull", "Goodfellas", "True Romance", "Pulp Fiction"], 
+        correctAnswer: 0, 
+        hints: ["Directed by Martin Scorsese", "based on a real-life boxer with a tumultuous personal life."] 
+    },
+    { 
+        image: 'assets/images/raider-of-the-lost-ark.webp', 
+        options: ["The Mummy", "Raiders of the Lost Ark", "National Treasure", "Tomb Raider"], 
+        correctAnswer: 1, 
+        hints: ["An archaeologist searching for a biblical artifact.", "Directed by Steven Spielberg."] 
+    },
+    { 
+        image: 'assets/images/rush.webp', 
+        options: ["Senna", "Ford v Ferrari", "Rush", "Driven"], 
+        correctAnswer: 2, 
+        hints: ["This film is based on the real-life rivalry between Formula 1", "Directed by Ron Howard, it showcases the intense 1976 Formula 1 season"] 
+    },
+    { 
+        image: 'assets/images/schindlers-list.webp', 
+        options: ["The Boy in the Striped Pajamas", "Life Is Beautiful", "The Pianist", "Schindlers List"], 
+        correctAnswer: 3, 
+        hints: ["Tells the true story of a German businessman who saves the lives of over a thousand Jewish refugees.", "The movie is set during the Holocaust"] 
+    },
+    { 
+        image: 'assets/images/stand-by-me.webp', 
+        options: ["Stand By Me", "The Sandlot", "My Girl", "Dead Poets Society"], 
+        correctAnswer: 0, 
+        hints: ["Follows a group of boys searching for a missing body.", "The film features a classic 1950s setting"] 
+    },
+    { 
+        image: 'assets/images/taxi-driver.webp', 
+        options: ["Dog Day Afternoon", "Taxi Driver", "Serpico", "Mean Streets"], 
+        correctAnswer: 1, 
+        hints: ["Follows a group of boys searching for a missing body.", "The film features a classic 1950s setting"] 
+    },
+    { 
+        image: 'assets/images/the-dark-knight.webp', 
+        options: ["Batman Begins", "The Avengers", "The Dark Knight", "Spider-Man 2"], 
+        correctAnswer: 2, 
+        hints: ["Heath Ledger's iconic performance as the Joker.", "It is part of a trilogy directed by Christopher Nolan"] 
+    },
+    { 
+        image: 'assets/images/the-god-father.webp', 
+        options: ["Scarface", "The Untouchables", "Casino", "The Godfather"], 
+        correctAnswer: 3, 
+        hints: ["The film follows the powerful Italian-American crime family", "It is based on the novel by Mario Puzo"] 
+    },
+    { 
+        image: 'assets/images/the-lord-of-the-rings-the-return-of-the-king.webp', 
+        options: ["The Lord of the Rings: The Return of the King", "The Hobbit: An Unexpected Journey", "Harry Potter and the Deathly Hallows: Part 2", "The Last Samurai"], 
+        correctAnswer: 0, 
+        hints: ["This film is the final installment in a trilogy", "It features the epic battle for Middle-earth"] 
+    },
+    { 
+        image: 'assets/images/the-matrix.webp', 
+        options: ["Inception", "The Matrix", "Blade Runner", "Total Recall"], 
+        correctAnswer: 1, 
+        hints: ["This film explores themes of reality and illusion in a dystopian future.", "The main character discovers he is living in a simulated reality"] 
+    },
+    { 
+        image: 'assets/images/the-silence-of-the-lambs.webp', 
+        options: ["Seven", "Psycho", "The Silence of the Lambs", "Zodiac"], 
+        correctAnswer: 2, 
+        hints: ["This film features a young FBI trainee who seeks the help of an imprisoned serial killer.", "Features the character of Hannibal Lecter"] 
+    },
+    { 
+        image: 'assets/images/the-thing.webp', 
+        options: ["Event Horizon", "The Mist", "The Fly", "The Thing"], 
+        correctAnswer: 3, 
+        hints: ["This film features a young FBI trainee who seeks the help of an imprisoned serial killer.", "Features the character of Hannibal Lecter"] 
+    },
+    { 
+        image: 'assets/images/the-usual-suspects.webp', 
+        options: ["Ocean's Eleven", "Memento", "The Departed", "The Usual Suspects"], 
+        correctAnswer: 3, 
+        hints: ["This film features a young FBI trainee who seeks the help of an imprisoned serial killer.", "Features the character of Hannibal Lecter"] 
+    },
 
-
-    
-    
-
-
-     
-        
-    // add 27 more questions
 ];
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
