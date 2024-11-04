@@ -9,48 +9,63 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 </head>
 <body>
-    <img src="assets/images/movie-background.webp" alt="main moive quiz background image" class="background-image">
-    <div id="startScreen" class="container">
-        <H1>Welcome to Blockbuster Brianbuster</H1>
-    <p>Answer Questions: Look at the movie image, choose the right answer from four options.</p>
-    <p>Earn Points: Points increase with difficulty</p>
-    <ul class="centered-list"></ul>
-        <li><strong>Easy:</strong> 1 point</li>
-        <li><strong>Medium:</strong> 2 points</li>
-        <li><strong>Hard:</strong> 3 points</li>
-    </ul>
+    <img src="assets/images/movie-background.webp" alt="main movie quiz background image" class="background-image">
+    
+    <!-- Start Screen Section -->
+    <section id="startScreen" class="container">
+        <header>
+            <h1>Welcome to Blockbuster Brainbuster</h1>
+        </header>
+        <p>Answer Questions: Look at the movie image, choose the right answer from four options.</p>
+        <p>Earn Points: Points increase with difficulty</p>
+        <ul class="centered-list">
+            <li><strong>Easy:</strong> 1 point</li>
+            <li><strong>Medium:</strong> 2 points</li>
+            <li><strong>Hard:</strong> 3 points</li>
+        </ul>
+        <label for="difficultySelector">Select Difficulty:</label>
         <select id="difficultySelector">
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
         </select>
         <button id="startQuizButton">Start Quiz</button>
-    </div>
+    </section>
     
-    <div id="quizContainer" class="container" style="display: none;">
-        <h2 id="questionTitle">Guess the Movie</h2>
-        <img id="questionImage" src="" alt="Movie Scene" class="question-image">
-        <div class="options">
+    <!-- Quiz Container Section -->
+    <main id="quizContainer" class="container" style="display: none;">
+        <header>
+            <h2 id="questionTitle">Guess the Movie</h2>
+        </header>
+        <figure>
+            <img id="questionImage" src="" alt="Movie Scene" class="question-image">
+        </figure>
+        <section class="options">
             <div class="answer-option">Option 1</div>
             <div class="answer-option">Option 2</div>
             <div class="answer-option">Option 3</div>
             <div class="answer-option">Option 4</div>
-        </div>
-        <div class="hints">
+        </section>
+        <section class="hints">
             <button class="hint-button">Hint 1</button>
             <button class="hint-button">Hint 2</button>
-        </div>
+        </section>
         <div id="hintBox" class="hint-box"></div>
-        </div>
-    </div>
+    </main>
 
-    <div id="endScreen" class="container" style="display: none;">
-        <h2>Quiz Complete!</h2>
+    <!-- End Screen Section -->
+    <section id="endScreen" class="container" style="display: none;">
+        <header>
+            <h2>Quiz Complete!</h2>
+        </header>
         <p id="scoreDisplay">Your score: 0</p>
         <button onclick="restartQuiz()">Restart Quiz</button>
-    </div>
+    </section>
+    
+    <!-- Audio Elements -->
     <audio id="correctSound" src="assets/sounds/correct-winner.mp3"></audio>
     <audio id="incorrectSound" src="assets/sounds/buzzer-incorrect.mp3"></audio>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
