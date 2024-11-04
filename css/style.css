@@ -38,9 +38,11 @@ h1, h2 {
 }
 
 .question-image {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
+    width: 400px; /* Set a fixed width for all quiz images */
+    height: 200px; /* Set a fixed height for all quiz images */
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    margin: 15px auto; /* Centers the image with auto margins */
+    display: block; /* Ensures the image is treated as a block element */
 }
 
 /* Answer Options */
