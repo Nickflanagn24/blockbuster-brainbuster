@@ -104,7 +104,7 @@ const questions = [
         hints: ["Directed by Martin Scorsese", "based on a real-life boxer with a tumultuous personal life."] 
     },
     { 
-        image: 'assets/images/raider-of-the-lost-ark.webp', 
+        image: 'assets/images/raiders-of-the-lost-ark.webp', 
         options: ["The Mummy", "Raiders of the Lost Ark", "National Treasure", "Tomb Raider"], 
         correctAnswer: 1, 
         hints: ["An archaeologist searching for a biblical artifact.", "Directed by Steven Spielberg."] 
