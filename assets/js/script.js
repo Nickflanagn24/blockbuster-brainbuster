@@ -1,6 +1,5 @@
 // Quiz variables
 const questions = [
-    // Sample placeholder questions
     { 
         image: 'assets/images/city-of-god.webp', 
         options: ["City of God", "The Motorcycle Diaries", "City of Men", "City of Angels"], 
@@ -185,58 +184,84 @@ let hintsAvailable = 0;
 
 // Initial setup on page load
 document.addEventListener("DOMContentLoaded", () => {
+    // Add event listener to start quiz button when page is loaded
     document.getElementById("startQuizButton").addEventListener("click", startQuiz);
 });
 
+/**
+ * Starts the quiz by setting up difficulty, selecting random questions, and displaying the first question.
+ */
 function startQuiz() {
     // Get difficulty from selector and set hints available
     difficulty = document.getElementById("difficultySelector").value;
     hintsAvailable = difficulty === "Easy" ? 2 : difficulty === "Medium" ? 1 : 0;
 
-    // Randomly select 10 questions
+    // Randomly select 10 questions from the full list
     selectedQuestions = shuffleArray(questions).slice(0, 10);
     currentQuestionIndex = 0;
     score = 0;
-    
+
+    // Hide start screen and show quiz container
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("quizContainer").style.display = "block";
+    
+    // Display the first question
     displayQuestion();
 }
 
+/**
+ * Displays the current question with its image and answer options.
+ */
 function displayQuestion() {
     const questionData = selectedQuestions[currentQuestionIndex];
     document.getElementById("questionImage").src = questionData.image;
     const options = document.querySelectorAll(".answer-option");
 
+    // Set up each option button with its text and click handler
     options.forEach((option, index) => {
         option.textContent = questionData.options[index];
         option.classList.remove("correct", "incorrect");
         option.onclick = () => checkAnswer(index);
     });
-    
+
+    // Display the hint buttons based on available hints
     displayHints();
 }
 
+/**
+ * Displays the hint buttons and attaches event listeners for showing hints.
+ */
 function displayHints() {
     const hintButtons = document.querySelectorAll(".hint-button");
     const hintBox = document.getElementById("hintBox");
-    hintBox.style.display = "none";
+    hintBox.style.display = "none"; // Hide hint initially
+
+    // Show only available hint buttons
     hintButtons.forEach((button, index) => {
         button.style.display = index < hintsAvailable ? "inline-block" : "none";
         button.onclick = () => showHint(index);
     });
 }
 
+/**
+ * Displays the hint based on the index selected.
+ * @param {number} index - The index of the hint to display.
+ */
 function showHint(index) {
     const hintBox = document.getElementById("hintBox");
     hintBox.textContent = selectedQuestions[currentQuestionIndex].hints[index];
-    hintBox.style.display = "block";
+    hintBox.style.display = "block"; // Show hint box
 }
 
+/**
+ * Checks if the selected answer is correct and updates the score.
+ * @param {number} selectedIndex - The index of the selected answer.
+ */
 function checkAnswer(selectedIndex) {
     const questionData = selectedQuestions[currentQuestionIndex];
     const options = document.querySelectorAll(".answer-option");
 
+    // Check if the selected answer is correct
     if (selectedIndex === questionData.correctAnswer) {
         options[selectedIndex].classList.add("correct");
         score += difficulty === "Easy" ? 1 : difficulty === "Medium" ? 2 : 3;
@@ -246,30 +271,44 @@ function checkAnswer(selectedIndex) {
         playSound("incorrect");
     }
 
+    // Move to the next question or end the quiz
     setTimeout(() => {
         currentQuestionIndex++;
         currentQuestionIndex < selectedQuestions.length ? displayQuestion() : endQuiz();
     }, 1000);
 }
 
+/**
+ * Ends the quiz, hiding the quiz container and displaying the score.
+ */
 function endQuiz() {
     document.getElementById("quizContainer").style.display = "none";
     document.getElementById("scoreDisplay").textContent = `Your score: ${score}`;
     document.getElementById("endScreen").style.display = "block";
 }
 
+/**
+ * Shuffles the array randomly.
+ * @param {Array} array - The array to shuffle.
+ * @returns {Array} - The shuffled array.
+ */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
     }
     return array;
 }
 
+/**
+ * Plays the sound based on the type ("correct" or "incorrect").
+ * @param {string} type - The type of sound to play.
+ */
 function playSound(type) {
     const correctSound = document.getElementById("correctSound");
     const incorrectSound = document.getElementById("incorrectSound");
 
+    // Play corresponding sound based on the answer's correctness
     if (type === "correct") {
         correctSound.play();
     } else if (type === "incorrect") {
@@ -277,12 +316,17 @@ function playSound(type) {
     }
 }
 
+/**
+ * Restarts the quiz by resetting the UI and showing the start screen.
+ */
 function restartQuiz() {
     document.getElementById("endScreen").style.display = "none";
     document.getElementById("startScreen").style.display = "block";
 }
 
-// Function to run when the page loads
+/**
+ * Initializes the mute state on page load. Sounds are muted by default.
+ */
 window.onload = function() {
     // Set sounds to be muted by default
     document.getElementById("correctSound").muted = true;
@@ -292,12 +336,15 @@ window.onload = function() {
     document.getElementById("muteButton").textContent = "🔇 Unmute";
 };
 
+/**
+ * Toggles the mute state for the quiz sounds.
+ * Updates the mute button text accordingly.
+ */
 function toggleMute() {
-    // Get audio elements
     const correctSound = document.getElementById("correctSound");
     const incorrectSound = document.getElementById("incorrectSound");
 
-    // Toggle the muted state
+    // Toggle the muted state of both sound elements
     const isCurrentlyMuted = correctSound.muted;
     correctSound.muted = !isCurrentlyMuted;
     incorrectSound.muted = !isCurrentlyMuted;
