@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Blockbuster Brainbuster</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 </head>
@@ -34,6 +34,7 @@
     
     <!-- Quiz Container Section -->
     <main id="quizContainer" class="container" style="display: none;">
+        <button id="muteButton" class="mute-button" onclick="toggleMute()">🔇 Mute</button>
         <header>
             <h2 id="questionTitle">Guess the Movie</h2>
         </header>
@@ -66,6 +67,6 @@
     <audio id="correctSound" src="assets/sounds/correct-winner.mp3"></audio>
     <audio id="incorrectSound" src="assets/sounds/buzzer-incorrect.mp3"></audio>
     
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -282,3 +282,26 @@ function restartQuiz() {
     document.getElementById("startScreen").style.display = "block";
 }
 
+// Function to run when the page loads
+window.onload = function() {
+    // Set sounds to be muted by default
+    document.getElementById("correctSound").muted = true;
+    document.getElementById("incorrectSound").muted = true;
+
+    // Set mute button text to "🔇 Unmute" indicating sounds are muted by default
+    document.getElementById("muteButton").textContent = "🔇 Unmute";
+};
+
+function toggleMute() {
+    // Get audio elements
+    const correctSound = document.getElementById("correctSound");
+    const incorrectSound = document.getElementById("incorrectSound");
+
+    // Toggle the muted state
+    const isCurrentlyMuted = correctSound.muted;
+    correctSound.muted = !isCurrentlyMuted;
+    incorrectSound.muted = !isCurrentlyMuted;
+
+    // Update button text based on the new state
+    document.getElementById("muteButton").textContent = isCurrentlyMuted ? "🔊 Mute" : "🔇 Unmute";
+}
