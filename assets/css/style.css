@@ -145,6 +145,16 @@ centered-list {
         width: 80%;
     }
 
+    /* Adjusting headline text size for mobile */
+    h1, h2 {
+        font-size: 2em; /* Increase the size of the headline text */
+    }
+
+    /* Adjusting the font size of the answer options */
+    .answer-option {
+        font-size: 0.9em; /* Smaller font size for answer options on mobile */
+    }
+
     .question-image {
         width: 100%; /* Reduce the width slightly on mobile for better centering */
         height: 120px; /* Fixed height */
