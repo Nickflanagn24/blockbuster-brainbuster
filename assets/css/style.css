@@ -38,8 +38,9 @@ h1, h2 {
 }
 
 .question-image {
-    width: 400px; /* Set a fixed width for all quiz images */
-    height: 200px; /* Set a fixed height for all quiz images */
+    width: 100%; /* Ensure it takes up full width of the container */
+    max-width: 400px; /* Maximum width for larger screens */
+    height: 200px; /* Fixed height */
     object-fit: cover; /* Ensures images maintain their aspect ratio */
     margin: 15px auto; /* Centers the image with auto margins */
     display: block; /* Ensures the image is treated as a block element */
@@ -120,20 +121,6 @@ button[onclick="restartQuiz()"] {
     margin-top: 10px;
 }
 
-button#startQuizButton,
-button[onclick="restartQuiz()"] {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #d9534f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-}
-
 button#startQuizButton:hover,
 button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
@@ -153,9 +140,18 @@ centered-list {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 738px) {
     .container {
-        width: 90%;
+        width: 80%;
+    }
+
+    .question-image {
+        width: 100%; /* Reduce the width slightly on mobile for better centering */
+        height: 120px; /* Fixed height */
+        margin-left: auto;
+        margin-right: auto; /* Centers the image horizontally */
+        display: block; /* Makes the image a block-level element */
+        max-width: none; /* Removes max-width to keep consistent size */
     }
 }
 
