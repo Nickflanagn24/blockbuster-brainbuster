@@ -271,11 +271,11 @@ function checkAnswer(selectedIndex) {
         playSound("incorrect");
     }
 
-    // Move to the next question or end the quiz
+    // Move to the next question or end the quiz after a 1.5 second delay
     setTimeout(() => {
         currentQuestionIndex++;
         currentQuestionIndex < selectedQuestions.length ? displayQuestion() : endQuiz();
-    }, 1000);
+    }, 1500); 
 }
 
 /**
