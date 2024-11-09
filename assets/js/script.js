@@ -130,7 +130,7 @@ const questions = [
         image: 'assets/images/taxi-driver.webp', 
         options: ["Dog Day Afternoon", "Taxi Driver", "Serpico", "Mean Streets"], 
         correctAnswer: 1, 
-        hints: ["Follows a group of boys searching for a missing body.", "The film features a classic 1950s setting"] 
+        hints: ["A loner becomes obsessed with cleaning up the city..", "Starring Robert De Niro, directed by Martin Scorsese."] 
     },
     { 
         image: 'assets/images/the-dark-knight.webp', 
@@ -166,7 +166,7 @@ const questions = [
         image: 'assets/images/the-thing.webp', 
         options: ["Event Horizon", "The Mist", "The Fly", "The Thing"], 
         correctAnswer: 3, 
-        hints: ["This film features a young FBI trainee who seeks the help of an imprisoned serial killer.", "Features the character of Hannibal Lecter"] 
+        hints: ["1982 sci-fi horror with famous creature effects..", "An alien mimics life forms in Antarctica."] 
     },
     { 
         image: 'assets/images/the-usual-suspects.webp', 
