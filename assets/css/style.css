@@ -139,6 +139,27 @@ centered-list {
     margin: 5px; /* Adds some spacing between items */
 }
 
+#endScreen img {
+    width: 100%;            /* Make the image width 100% of its container */
+    height: auto;           /* Maintain the aspect ratio */
+    object-fit: cover;      /* Ensure the image covers the area of the container */
+    max-height: 400px;      /* Optional: limit the height if you want it to be consistent */
+    margin-top: 20px;       /* Add some spacing between the image and text */
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;    /* Even larger size for h1 on large screens */
+    }
+    h2 {
+        font-size: 2.5rem;  /* Larger size for h2 on large screens */
+    }
+    h3 {
+        font-size: 2rem;    /* Larger size for h3 on large screens */
+    }
+    /* Adjust other header sizes if necessary */
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 738px) {
     .container {
@@ -147,7 +168,7 @@ centered-list {
 
     /* Adjusting headline text size for mobile */
     h1, h2 {
-        font-size: 2em; /* Increase the size of the headline text */
+        font-size: 3em; /* Increase the size of the headline text */
     }
 
     /* Adjusting the font size of the answer options */
