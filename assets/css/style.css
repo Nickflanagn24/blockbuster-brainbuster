@@ -106,9 +106,10 @@ h1, h2 {
     font-size: 1.1em;
 }
 
-/* Start and Restart Buttons */
+/* Start, Restart, and Home Buttons */
 button#startQuizButton,
-button[onclick="restartQuiz()"] {
+button[onclick="restartQuiz()"],
+button[onclick="returnToHome()"] {
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
@@ -121,12 +122,15 @@ button[onclick="restartQuiz()"] {
     margin-top: 10px;
 }
 
+/* Hover effect for all buttons */
 button#startQuizButton:hover,
-button[onclick="restartQuiz()"]:hover {
+button[onclick="restartQuiz()"]:hover,
+button[onclick="returnToHome()"]:hover {
     background-color: #c9302c;
 }
 
-centered-list {
+/* Centered List */
+.centered-list {
     list-style-position: inside; /* Places bullets next to the text */
     text-align: center; /* Centers the list items */
     padding: 0;
@@ -140,11 +144,11 @@ centered-list {
 }
 
 #endScreen img {
-    width: 100%;            /* Make the image width 100% of its container */
-    height: auto;           /* Maintain the aspect ratio */
-    object-fit: cover;      /* Ensure the image covers the area of the container */
-    max-height: 400px;      /* Optional: limit the height if you want it to be consistent */
-    margin-top: 20px;       /* Add some spacing between the image and text */
+    width: 100%;            
+    height: auto;           
+    object-fit: cover;      
+    max-height: 400px;      
+    margin-top: 20px;       
 }
 
 @media (min-width: 1200px) {
