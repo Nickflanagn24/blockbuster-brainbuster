@@ -106,10 +106,9 @@ h1, h2 {
     font-size: 1.1em;
 }
 
-/* Start, Restart, and Home Buttons */
+/* Start and Restart Buttons */
 button#startQuizButton,
-button[onclick="restartQuiz()"],
-button[onclick="returnToHome()"] {
+button[onclick="restartQuiz()"] {
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
@@ -122,15 +121,12 @@ button[onclick="returnToHome()"] {
     margin-top: 10px;
 }
 
-/* Hover effect for all buttons */
 button#startQuizButton:hover,
-button[onclick="restartQuiz()"]:hover,
-button[onclick="returnToHome()"]:hover {
+button[onclick="restartQuiz()"]:hover {
     background-color: #c9302c;
 }
 
-/* Centered List */
-.centered-list {
+centered-list {
     list-style-position: inside; /* Places bullets next to the text */
     text-align: center; /* Centers the list items */
     padding: 0;
@@ -139,16 +135,16 @@ button[onclick="returnToHome()"]:hover {
 
 .centered-list li {
     display: inline-block; /* Centers items horizontally */
-    text-align: left; 
-    margin: 5px; 
+    text-align: left; /* Ensures text aligns left within each item */
+    margin: 5px; /* Adds some spacing between items */
 }
 
 #endScreen img {
-    width: 100%;            
-    height: auto;           
-    object-fit: cover;      
-    max-height: 400px;      
-    margin-top: 20px;       
+    width: 100%;            /* Make the image width 100% of its container */
+    height: auto;           /* Maintain the aspect ratio */
+    object-fit: cover;      /* Ensure the image covers the area of the container */
+    max-height: 400px;      /* Optional: limit the height if you want it to be consistent */
+    margin-top: 20px;       /* Add some spacing between the image and text */
 }
 
 @media (min-width: 1200px) {
@@ -208,4 +204,55 @@ button[onclick="returnToHome()"]:hover {
 
 .mute-button:hover {
     background-color: #c9302c;
+}
+
+/* Set the html and body to take full height to support sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content should expand to push the footer down if necessary */
+.content {
+    flex: 1; /* This makes the content area grow and push the footer down */
+}
+
+/* Footer styling */
+.social-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-top: 1px solid #ddd;
+}
+
+/* Social icon styling */
+.social-link {
+    margin: 0 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+/* Hover effect for social icons */
+.social-link:hover .social-icon {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 600px) {
+    .social-footer {
+        padding: 10px;
+    }
+
+    .social-link {
+        margin: 0 10px;
+    }
 }

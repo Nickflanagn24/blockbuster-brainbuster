@@ -81,7 +81,7 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 
 - **HTML**: No errors were returned when passing through the official [W3C HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F). 
 - **CSS**: No errors were returned when passing through the official [W3C Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- **Javascript**: No errors major errors were found when using [JSHint](https://jshint.com/)
+- **Javascript**: No warnings were found when using [JSHint](https://jshint.com/)
 
 ---
 

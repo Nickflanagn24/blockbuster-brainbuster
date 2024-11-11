@@ -272,9 +272,13 @@ function checkAnswer(selectedIndex) {
     }
 
     // Move to the next question or end the quiz after a 1.5 second delay
-    setTimeout(() => {
+    setTimeout(function() {
         currentQuestionIndex++;
-        currentQuestionIndex < selectedQuestions.length ? displayQuestion() : endQuiz();
+        if (currentQuestionIndex < selectedQuestions.length) {
+            displayQuestion();
+        } else {
+            endQuiz();
+        }
     }, 1500); 
 }
 
@@ -317,7 +321,10 @@ function playSound(type) {
 }
 
 /**
- * Restarts the quiz by resetting the UI and showing the start screen.
+ * Resets the quiz to its initial state by hiding the end screen
+ * and displaying the start screen.
+ * This function is called when the user chooses to restart the quiz
+ * after it has ended.
  */
 function restartQuiz() {
     document.getElementById("endScreen").style.display = "none";
