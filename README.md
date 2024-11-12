@@ -10,7 +10,7 @@ The **Blockbuster Brainbuster** game is designed to entertain movie lovers while
 ---
 
 ## Responsive Mockup
-The website has been developed to be fully responsive, ensuring the quiz is enjoyable on all devices, from desktop to mobile. The clean layout allows users to focus on the quiz without distractions, providing an intuitive and immersive experience whether they are playing on a large screen or a small mobile device.
+The website has been developed to be fully responsive, ensuring the quiz is enjoyable on all devices, from desktop to mobile. The clean layout allows users to focus on the quiz without distractions, providing an intuitive and immersive experience whether playing on a large screen or a small mobile device.
 
 ---
 
@@ -19,10 +19,10 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 ### Existing Features
 
 - **Landing Page**
-  - The landing page provides a welcoming introduction to the quiz, featuring a catchy tagline, a brief description, and a prominent "Start Quiz" button to get users into the game quickly.
-  - The page also includes a visual theme based on popular movie elements, engaging users right from the start with appealing imagery.
+  -The landing page provides a welcoming introduction to the quiz, featuring a catchy tagline, a brief description, and a prominent "Start Quiz" button to get users into the game quickly.
+  -The page also includes a visual theme based on popular movie elements, engaging users right from the start with appealing imagery.
 
-  - **Mute Button**
+- **Mute Button**
   - Blockbuster Brainbquiz quiz has a mute button to mute the sounds.  The sounds are an audio feeedback for the user to if they got the question right or wrong.
   - The mute button is set to mute when the quiz loads up by default.  The mute button can be found at the top right of any screen.
 
@@ -31,7 +31,7 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
   - The difficulty selection ensures that players can customize the challenge according to their movie knowledge and skill level.
   ![start screen](assets/images/readme/startscreen-readme.webp)
 
-- **Randomized Question Generator**
+- **Randomised Question Generator**
   - The game selects 10 random questions from a pool of 30, so each quiz session is unique and offers a fresh challenge each time.
   - Each question has multiple-choice answers, and players must select the correct option to score points.
 
@@ -57,11 +57,11 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 
 ---
 
-## Features That Could Be Implamented in the Future
+## Features That Could Be Implemented in the Future
 - **Leaderboard**: A global leaderboard system that records and displays the highest scores achieved by players.
 - **User Authentication**: Allow players to create accounts and track their progress across multiple sessions, storing their highest scores and quiz history.
 - **Question Pool Expansion**: Add more questions to the pool, increasing the variety and challenge for players over time.
-- **A timer**: - Adding a time would make bring the sense of urgency and make the user have to think quick
+- **A timer**: - Adding a timer would bring a sense of urgency and make the user think quickly. Increasing the challenge of the quiz.
 
 
 ---
@@ -74,11 +74,10 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 - **Browser Compatibility**: The game has been tested on multiple browsers (Chrome, Firefox, Safari, Edge) and is fully functional across these platforms.
 - **Mobile Responsiveness**: The game interface is responsive and provides an optimal experience on mobile devices.
 - **Unfixed Bugs**: During testing, no significant bugs were encountered. 
-- **Device testing**: Tested not only on different sizes in developer tools but also on diffrent devices. Includig tablets and different mobile phones.
-
-**Page Speed Insights Test**: The application scored very highly on Google Page Speed Insight test.  
-- It got a perfect 100 score for the desktop site for performance, accessability, best practices and seo. 
-- The mobile version got a 91 for performance and a 100 for everything else which is great.  See the results in the image below - 
+- **Device testing**: Tested not only on different sizes in developer tools but also on different devices. Including tablets and different mobile phones.
+- **Page Speed Insights Test**: The application scored very highly on the Google Page Speed Insight test.  
+- It got a perfect 100 score for the desktop site for performance, accessibility, best practices, and SEO.  
+- The mobile version got a 91 for performance and a 100 for everything else which is great.  See the results in the image below. - 
 
 ![Page Speed Insight Test](assets/images/readme/insight-test-results.webp)
 
@@ -111,9 +110,9 @@ The **Blockbuster Brainbuster** quiz has been deployed using **GitHub Pages**. B
 
 ### Media
 - The images used throughout the website were sourced from [Film Grab](https://film-grab.com/), focusing on movie-themed visuals such as iconic film scenes. 
-- All over images were produced in [Canva](https://www.canva.com/).
-- The fonts were souced from [Font Awesome](https://fontawesome.com).
+- All other images were produced in [Canva](https://www.canva.com/).
+- The fonts were sourced from [Font Awesome](https://fontawesome.com).
 
 ---
 
-Thanks for checking out the **Blockbuster Brainbuster** quiz! This project is an engaging and interactive game, offering an enjoyable challenge for movie lovers. The structure and planning behind the quiz has a solid foundation for future expansion, with the possibility of incorporating additional features such as user profiles and a leaderboard.
+Thanks for checking out the **Blockbuster Brainbuster** quiz! This project is an engaging and interactive game, offering an enjoyable challenge for movie lovers. The structure and planning behind the quiz have a solid foundation for future expansion, with the possibility of incorporating additional features such as user profiles and a leaderboard.
