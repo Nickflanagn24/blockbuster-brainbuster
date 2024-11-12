@@ -74,6 +74,13 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 - **Browser Compatibility**: The game has been tested on multiple browsers (Chrome, Firefox, Safari, Edge) and is fully functional across these platforms.
 - **Mobile Responsiveness**: The game interface is responsive and provides an optimal experience on mobile devices.
 - **Unfixed Bugs**: During testing, no significant bugs were encountered. 
+- **Device testing**: Tested not only on different sizes in developer tools but also on diffrent devices. Includig tablets and different mobile phones.
+
+**Page Speed Insights Test**: The application scored very highly on Google Page Speed Insight test.  
+- It got a perfect 100 score for the desktop site for performance, accessability, best practices and seo. 
+- The mobile version got a 91 for performance and a 100 for everything else which is great.  See the results in the image below - 
+
+![Page Speed Insight Test](assets/images/readme/insight-test-results.webp)
 
 ---
 
@@ -103,7 +110,8 @@ The **Blockbuster Brainbuster** quiz has been deployed using **GitHub Pages**. B
 - Instructions and gameplay mechanics were designed by the project team.
 
 ### Media
-- The images used throughout the website were sourced from [Film Grab](https://film-grab.com/), focusing on movie-themed visuals such as iconic film scenes.
+- The images used throughout the website were sourced from [Film Grab](https://film-grab.com/), focusing on movie-themed visuals such as iconic film scenes. 
+- All over images were produced in [Canva](https://www.canva.com/).
 - The fonts were souced from [Font Awesome](https://fontawesome.com).
 
 ---
