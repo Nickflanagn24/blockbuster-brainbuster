@@ -14,6 +14,9 @@
 <body>
     <img src="assets/images/movie-background.webp" alt="main movie quiz background image" class="background-image">
     
+    <!-- Mute Button, placed here to be visible on all screens -->
+    <button id="muteButton" class="mute-button" onclick="toggleMute()">🔇 Mute</button>
+
     <!-- Start Screen Section -->
     <section id="startScreen" class="container">
         <header>
@@ -37,7 +40,6 @@
     
     <!-- Quiz Container Section -->
     <main id="quizContainer" class="container" style="display: none;">
-        <button id="muteButton" class="mute-button" onclick="toggleMute()">🔇 Mute</button>
         <header>
             <h2 id="questionTitle">Guess the Movie</h2>
         </header>
