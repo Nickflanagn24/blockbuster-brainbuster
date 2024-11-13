@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Blockbuster Brainbuster</title>
-    <meta name="description" content="Test your movie knowledge with Blockbuster Brainbuster! Guess movies from images, earn points by difficulty, and challenge your friends.">
-    <meta name="keywords" content="movie quiz, image quiz, movie trivia, film quiz, Blockbuster Brainbuster, movie game, movie knowledge">
+    <meta name="description"
+        content="Test your movie knowledge with Blockbuster Brainbuster! Guess movies from images, earn points by difficulty, and challenge your friends.">
+    <meta name="keywords"
+        content="movie quiz, image quiz, movie trivia, film quiz, Blockbuster Brainbuster, movie game, movie knowledge">
     <meta name="author" content="Your Name">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
+
 <body>
     <img src="assets/images/movie-background.webp" alt="main movie quiz background image" class="background-image">
-    
+
     <!-- Mute Button, placed here to be visible on all screens -->
     <button id="muteButton" class="mute-button" onclick="toggleMute()">🔇 Mute</button>
 
@@ -24,12 +28,14 @@
         </header>
         <p>Answer Questions: Look at the movie image, choose the right answer from four options.</p>
         <p>Earn Points: Points increase with difficulty</p>
+        <p>Turn the sound on and off by pressing the <strong>Mute</strong> button. Set to mute by default.
+        </p>
         <ul class="centered-list">
-            <li><strong>Easy:</strong> 1 point</li>
-            <li><strong>Medium:</strong> 2 points</li>
-            <li><strong>Hard:</strong> 3 points</li>
+            <li><strong>Easy:</strong> 1 point with 2 hints per question</li>
+            <li><strong>Medium:</strong> 2 points with 1 hint per question</li>
+            <li><strong>Hard:</strong> 3 points with 0 hints per question</li>
         </ul>
-        <label for="difficultySelector">Select Difficulty:</label>
+        <label for="difficultySelector">Select difficulty:</label>
         <select id="difficultySelector">
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
@@ -37,7 +43,7 @@
         </select>
         <button id="startQuizButton">Start Quiz</button>
     </section>
-    
+
     <!-- Quiz Container Section -->
     <main id="quizContainer" class="container" style="display: none;">
         <header>
@@ -67,11 +73,12 @@
         <img src="assets/images/quiz-results.webp" alt="End of quiz montage">
         <button onclick="restartQuiz()">Restart Quiz</button>
     </section>
-    
+
     <!-- Audio Elements -->
     <audio id="correctSound" src="assets/sounds/correct.mp3"></audio>
     <audio id="incorrectSound" src="assets/sounds/buzzer-incorrect.mp3"></audio>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
