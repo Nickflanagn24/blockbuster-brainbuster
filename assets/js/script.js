@@ -214,14 +214,19 @@ function startQuiz() {
  */
 function displayQuestion() {
     const questionData = selectedQuestions[currentQuestionIndex];
-    document.getElementById("questionImage").src = questionData.image;
+    document.getElementById("questionImage").innerHTML = `<img src="${questionData.image}" alt="Movie Scene" class="question-image">`;
+
     const options = document.querySelectorAll(".answer-option");
 
     // Set up each option button with its text and click handler
     options.forEach((option, index) => {
         option.textContent = questionData.options[index];
         option.classList.remove("correct", "incorrect");
-        option.onclick = () => checkAnswer(index);
+      option.onclick = () => {
+      	options.forEach((option) => option.onclick = null);
+      	checkAnswer(index);
+    };
+     
     });
 
     // Display the hint buttons based on available hints

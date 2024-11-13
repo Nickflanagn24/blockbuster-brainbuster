@@ -7,9 +7,6 @@
 ### Project Goals
 The **Blockbuster Brainbuster** game is designed to entertain movie lovers while also providing an educational experience about film history. The game aims to engage users through fun, trivia-style gameplay, encouraging them to expand their knowledge of movies. Targeting a wide audience of movie fans, from casual viewers to hardcore cinephiles, this quiz offers an easy-to-play but challenging format that rewards quick thinking and movie knowledge.
 
----
-
-## Responsive Mockup
 The website has been developed to be fully responsive, ensuring the quiz is enjoyable on all devices, from desktop to mobile. The clean layout allows users to focus on the quiz without distractions, providing an intuitive and immersive experience whether playing on a large screen or a small mobile device.
 
 ---
@@ -23,7 +20,7 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
   -The page also includes a visual theme based on popular movie elements, engaging users right from the start with appealing imagery.
 
 - **Mute Button**
-  - Blockbuster Brainbquiz quiz has a mute button to mute the sounds.  The sounds are an audio feeedback for the user to if they got the question right or wrong.
+  - The Blockbuster Brainbquiz quiz has a mute button to mute the sounds.  The sounds are audio feedback for the user to see if they got the question right or wrong.
   - The mute button is set to mute when the quiz loads up by default.  The mute button can be found at the top right of any screen.
 
 - **Start Screen**
@@ -58,6 +55,7 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 ---
 
 ## Features That Could Be Implemented in the Future
+The application is a finished poduct ready to go out to the masses.  Looking forward to future updates, these feature could be deployed - 
 - **Leaderboard**: A global leaderboard system that records and displays the highest scores achieved by players.
 - **User Authentication**: Allow players to create accounts and track their progress across multiple sessions, storing their highest scores and quiz history.
 - **Question Pool Expansion**: Add more questions to the pool, increasing the variety and challenge for players over time.
@@ -73,8 +71,8 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 - **Functionality**: The quiz's core features (random question generation, hint system, and score tracking) work as intended. The questions are randomized with each game session, and the hints appear based on the selected difficulty.
 - **Browser Compatibility**: The game has been tested on multiple browsers (Chrome, Firefox, Safari, Edge) and is fully functional across these platforms.
 - **Mobile Responsiveness**: The game interface is responsive and provides an optimal experience on mobile devices.
-- **Unfixed Bugs**: During testing, no significant bugs were encountered. 
-- **Device testing**: Tested not only on different sizes in developer tools but also on different devices. Including tablets and different mobile phones.
+- **Unfixed Bugs**: During testing, no significant bugs were left unfixed. 
+- **Device testing**: Tested not only on different sizes in developer tools but also on different devices. Including tablets and different mobile phones. These included Android and iOS devices. As well as tablets including Ipads and andriod tablets.
 - **Page Speed Insights Test**: The application scored very highly on the Google Page Speed Insight test.  
 - It got a perfect 100 score for the desktop site for performance, accessibility, best practices, and SEO.  
 - The mobile version got a 91 for performance and a 100 for everything else which is great.  See the results in the image below. - 
@@ -87,7 +85,7 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 
 - **HTML**: No errors were returned when passing through the official [W3C HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F). 
 - **CSS**: No errors were returned when passing through the official [W3C Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- **Javascript**: No warnings were found when using [JSHint](https://jshint.com/)
+- **Javascript**: No warnings were found when using [JSHint](https://jshint.com/). JSHint did flag up 2 unsed bits of code. This is because unsed variatable are fuctions, and called using onClicks in the the HTML file.
 
 ---
 
@@ -115,4 +113,4 @@ The **Blockbuster Brainbuster** quiz has been deployed using **GitHub Pages**. B
 
 ---
 
-Thanks for checking out the **Blockbuster Brainbuster** quiz! This project is an engaging and interactive game, offering an enjoyable challenge for movie lovers. The structure and planning behind the quiz have a solid foundation for future expansion, with the possibility of incorporating additional features such as user profiles and a leaderboard.
+Thanks for checking out the **Blockbuster Brainbuster** quiz! This project is an engaging and interactive game, offering an enjoyable challenge for movie lovers. The structure and planning behind the quiz have a solid foundation for future expansion, with the possibility of incorporating additional features. 
