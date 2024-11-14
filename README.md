@@ -16,16 +16,15 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 ### Existing Features
 
 - **Landing Page**
-  -The landing page provides a welcoming introduction to the quiz, featuring a catchy tagline, a brief description, and a prominent "Start Quiz" button to get users into the game quickly.
-  -The page also includes a visual theme based on popular movie elements, engaging users right from the start with appealing imagery.
+  -The landing page provides a welcoming introduction to the quiz, featuring a catchy tagline, a brief description, and a prominent "Start Quiz" button to get users into the game quickly. -The page also includes a visual theme based on popular movie elements, engaging users right from the start with appealing imagery.
 
 - **Mute Button**
-  - The Blockbuster Brainbquiz quiz has a mute button to mute the sounds.  The sounds are audio feedback for the user to see if they got the question right or wrong.
-  - The mute button is set to mute when the quiz loads up by default.  The mute button can be found at the top right of any screen.
+  - The Blockbuster Brainbquiz quiz has a mute button to mute the sounds. The sounds are audio feedback for the user to see if they got the question right or wrong.
+  - By default, the mute button is set to mute when the quiz loads up. The mute button can be found at the top right of any screen.
 
 - **Start Screen**
   - The start screen allows users to choose their desired difficulty level (Easy, Medium, or Hard). This decision determines how many hints will be available during the quiz.
-  - The difficulty selection ensures that players can customize the challenge according to their movie knowledge and skill level.
+  - The difficulty selection ensures that players can customize the challenge according to their movie knowledge and skill level. 
   ![start screen](assets/images/readme/startscreen-readme.webp)
 
 - **Randomised Question Generator**
@@ -33,7 +32,7 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
   - Each question has multiple-choice answers, and players must select the correct option to score points.
 
 - **Hint System**
-  - Based on the selected difficulty, the player will receive a set number of hints. On **Easy** difficulty, 2 hints are provided, while **Medium** offers 1 hint. **Hard** does not offer any hints.
+  - Based on the selected difficulty, the player will receive a set number of hints. On **Easy** difficulty, 2 hints are provided, while **Medium** offers 1 hint. **Hard** does not offer any hints.
   - Hints are designed to provide brief clues to help the player deduce the correct answer, ensuring the game remains challenging while still offering some assistance.
 
   ![hint screen](assets/images/readme/hints-readme.webp)
@@ -44,7 +43,7 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 
 - **Ending Screen**
   - The ending screen shows the player’s final score and options to either restart the quiz or return to the home page.
-  - This section reinforces the idea of replayability, encouraging users to play again and improve their score.
+  - This section reinforces the idea of replayability, encouraging users to play again and improve their scores.
   
   ![end screen](assets/images/readme/endscreen-readme.webp)
 
@@ -55,12 +54,11 @@ The website has been developed to be fully responsive, ensuring the quiz is enjo
 ---
 
 ## Features That Could Be Implemented in the Future
-The application is a finished poduct ready to go out to the masses.  Looking forward to future updates, these feature could be deployed - 
+The application is a finished product ready to go out to the masses. Looking forward to future updates, these features could be deployed - 
 - **Leaderboard**: A global leaderboard system that records and displays the highest scores achieved by players.
 - **User Authentication**: Allow players to create accounts and track their progress across multiple sessions, storing their highest scores and quiz history.
 - **Question Pool Expansion**: Add more questions to the pool, increasing the variety and challenge for players over time.
 - **A timer**: - Adding a timer would bring a sense of urgency and make the user think quickly. Increasing the challenge of the quiz.
-
 
 ---
 
@@ -72,10 +70,10 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 - **Browser Compatibility**: The game has been tested on multiple browsers (Chrome, Firefox, Safari, Edge) and is fully functional across these platforms.
 - **Mobile Responsiveness**: The game interface is responsive and provides an optimal experience on mobile devices.
 - **Unfixed Bugs**: During testing, no significant bugs were left unfixed. 
-- **Device testing**: Tested not only on different sizes in developer tools but also on different devices. Including tablets and different mobile phones. These included Android and iOS devices. As well as tablets including Ipads and andriod tablets.
-- **Page Speed Insights Test**: The application scored very highly on the Google Page Speed Insight test.  
+- **Device testing**: Tested not only on different sizes in developer tools but also on different devices, including tablets and mobile phones. These included Android and iOS devices. As well as tablets including iPads and Android tablets.
+- **Page Speed Insights Test**: The application scored very highly on the Google Page Speed Insight test. 
 - It got a perfect 100 score for the desktop site for performance, accessibility, best practices, and SEO.  
-- The mobile version got a 91 for performance and a 100 for everything else which is great.  See the results in the image below. - 
+- The mobile version got a 91 for performance and a 100 for everything else which is great. See the results in the image below. -
 
 ![Page Speed Insight Test](assets/images/readme/insight-test-results.webp)
 
@@ -85,7 +83,9 @@ The **Blockbuster Brainbuster** game has undergone extensive testing to ensure a
 
 - **HTML**: No errors were returned when passing through the official [W3C HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F). 
 - **CSS**: No errors were returned when passing through the official [W3C Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnickflanagn24.github.io%2Fblockbuster-brainbuster%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- **Javascript**: No warnings were found when using [JSHint](https://jshint.com/). JSHint did flag up 2 unsed bits of code. This is because unsed variatable are fuctions, and called using onClicks in the the HTML file.
+- **Javascript**: No warnings were found when using [JSHint](https://jshint.com/). JSHint did flag up 2 unused bits of code. This is because unused variables are functions, and called using onClicks in the the HTML file.
+
+- **Wave Testing Tool**: There were no errors when running the site through [Wave Testing tool](https://wave.webaim.org/report#/https://nickflanagn24.github.io/blockbuster-brainbuster/)
 
 ---
 
@@ -97,6 +97,51 @@ The **Blockbuster Brainbuster** quiz has been deployed using **GitHub Pages**. B
 2. From the **Source** section, select the **Main Branch**.
 3. Once selected, the page automatically refreshes, confirming the successful deployment.
 4. The live website can be accessed [here](https://nickflanagn24.github.io/blockbuster-brainbuster/).
+
+---
+
+## Bugs & Fixes
+1.**Mute Button Visibility Issue**
+
+**Bug**: The mute button is only displayed on the quiz screen, disappearing on other screens.
+
+**Fix**: Moved the mute button to be outside the quiz container so it’s always visible. Updated CSS to position it consistently across screens.
+
+2.**Question Image Display Issue**
+
+**Bug**: Images for questions were not displaying due to incorrect HTML string formatting in JavaScript.
+
+**Fix**: Corrected the innerHTML assignment for questionImage to properly set the src attribute with ${questionData.image}. Ensured correct syntax by closing quotes within the template string.
+
+3.**Contrast Accessibility Errors**
+
+**Bug**: Text and button colors were too low in contrast, failing accessibility standards.
+
+**Fix**: Updated CSS with higher-contrast colors (e.g., light text on dark backgrounds) and brightened buttons to enhance visibility. Applied text shadows to improve readability over images.
+
+4.**JavaScript Function Errors** (Uncaught ReferenceError)
+
+**Bug**: Uncaught ReferenceErrors due to undefined or misnamed variables within functions.
+
+**Fix**: Verified variable names were consistent and initialized before use. Added console logging for debugging and isolated missing variables.
+
+5.**End Screen Not Displaying Final Score**
+
+**Bug**: The final score was not visible on the end screen.
+
+**Fix**: Updated the showEndScreen() function to retrieve the latest score and inject it into the end screen’s score display element.
+
+6.**Incorrect Answer Feedback Delayed**
+
+**Bug**: Feedback for correct/incorrect answers (e.g., color changes) wasn’t appearing until the next question loaded.
+
+**Fix**: Added a short timeout before advancing to the next question, allowing time to display feedback, and used setTimeout() to briefly show whether the answer was correct or incorrect.
+
+7.**Navigation Between Screens**
+
+**Bug**: Navigation buttons caused unexpected behavior when clicked multiple times or too quickly.
+
+**Fix**: Added debounce functionality to navigation buttons to prevent multiple rapid clicks. Also disabled buttons temporarily during transitions.
 
 ---
 
