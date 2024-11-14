@@ -93,17 +93,17 @@ h1, h2 {
 }
 
 .hint-button:hover {
-    background-color: #c9302c;
+    background-color: #7c1f1c;
 }
 
 .hint-box {
     margin-top: 10px;
     padding: 10px;
-    background-color: #d9534f;
+    background-color: #c9302c;
     color: white;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* Start and Restart Buttons */
@@ -112,7 +112,7 @@ button[onclick="restartQuiz()"] {
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
-    background-color: #d9534f;
+    background-color: #c9302c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
